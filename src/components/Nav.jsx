@@ -5,6 +5,7 @@ import Link from "next/link";
 export default function Nav() {
   const [isResponsive, setIsResponsive] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const onEsc = (e) => {
@@ -49,20 +50,42 @@ export default function Nav() {
         <a href="tel:+2120656561701">Appeler Maintenant</a>
       </div>
 
-      <div className="toggle" onClick={() => setIsResponsive(!isResponsive)}>
-        <i className={isResponsive ? "fa fa-times" : "fa fa-bars"}></i>
-      </div>
+      <button
+        className="toggle"
+        aria-label={isResponsive ? "Close menu" : "Open menu"}
+        aria-expanded={isResponsive}
+        aria-controls="mobile-menu"
+        onClick={() => setIsResponsive(!isResponsive)}
+      >
+        <span className={isResponsive ? "hamburger active" : "hamburger"}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
 
       {isResponsive && (
-        <div className="dropdown" onClick={() => setIsResponsive(false)}>
-          <Link href="/">Acceuil</Link>
+        <div id="mobile-menu" className="dropdown">
+          <Link href="/" onClick={() => setIsResponsive(false)}>Acceuil</Link>
           <div className="dropdown-group">
-            <span className="group-title">Nos Services</span>
-            <Link href="/services/transport-medicalise">Transport médicalisé</Link>
-            <Link href="/services/intervention-urgence">Intervention d'urgence</Link>
-            <Link href="/services/assistance-patients">Assistance aux patients</Link>
+            <button
+              className="services-trigger"
+              aria-expanded={mobileServicesOpen}
+              onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
+            >
+              Nos Services {" "}
+              <i className={mobileServicesOpen ? "fa fa-chevron-up" : "fa fa-chevron-down"}></i>
+            </button>
+            {mobileServicesOpen && (
+              <>
+                <Link href="/services/transport-medicalise" onClick={() => setIsResponsive(false)}>Transport médicalisé</Link>
+                <Link href="/services/intervention-urgence" onClick={() => setIsResponsive(false)}>Intervention d'urgence</Link>
+                <Link href="/services/assistance-patients" onClick={() => setIsResponsive(false)}>Assistance aux patients</Link>
+              </>
+            )}
           </div>
-          <Link href="/faq">FAQ</Link>
+          <Link href="/faq" onClick={() => setIsResponsive(false)}>FAQ</Link>
+          <Link href="/contact" onClick={() => setIsResponsive(false)}>Contact</Link>
           <a className="btn" href="tel:+2120656561701">Appeler Maintenant</a>
         </div>
       )}

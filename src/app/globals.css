@@ -111,3 +111,58 @@ a {
   .services .card:hover { transform: translateY(-1px); box-shadow: 0 6px 16px rgba(22,53,110,.08); }
 }
 .services .card:focus-visible { outline: 2px solid rgba(22,53,110,.28); outline-offset: 2px; border-radius: 12px; }
+
+/* Global navbar responsiveness so hamburger works on all pages */
+nav .toggle {
+  display: none;
+}
+
+/* Minimal CSS hamburger icon */
+nav .hamburger { display: inline-block; width: 28px; height: 20px; position: relative; }
+nav .hamburger span { position: absolute; left: 0; right: 0; height: 2px; background: currentColor; border-radius: 2px; transition: transform .2s ease, opacity .2s ease; }
+nav .hamburger span:nth-child(1) { top: 0; }
+nav .hamburger span:nth-child(2) { top: 9px; }
+nav .hamburger span:nth-child(3) { bottom: 0; }
+nav .hamburger.active span:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+nav .hamburger.active span:nth-child(2) { opacity: 0; }
+nav .hamburger.active span:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+@media screen and (max-width: 900px) {
+  nav .toggle {
+    display: block !important;
+    padding: 8px 10px;
+    cursor: pointer;
+    color: #16356e;
+    background: transparent;
+    border: 0;
+    position: relative;
+    z-index: 100;
+    line-height: 0;
+  }
+
+  nav .links,
+  nav .call {
+    display: none !important;
+  }
+
+  nav .dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
+  nav .dropdown .btn {
+    background-color: #d32f2f;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin: 0.5rem 1rem;
+  }
+}
