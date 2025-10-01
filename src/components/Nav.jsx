@@ -73,8 +73,8 @@ export default function Nav() {
               aria-expanded={mobileServicesOpen}
               onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
             >
-              Nos Services {" "}
-              <i className={mobileServicesOpen ? "fa fa-chevron-up" : "fa fa-chevron-down"}></i>
+              Nos Services
+              <span className={mobileServicesOpen ? "arrow open" : "arrow"} aria-hidden="true"></span>
             </button>
             {mobileServicesOpen && (
               <>
