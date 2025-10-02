@@ -43,6 +43,7 @@ export default function Nav() {
           )}
         </div>
         <Link href="/faq">FAQ</Link>
+        <Link href="/blogs">Blogs</Link>
         <Link href="/contact">Contact</Link>
       </div>
 
@@ -85,6 +86,7 @@ export default function Nav() {
             )}
           </div>
           <Link href="/faq" onClick={() => setIsResponsive(false)}>FAQ</Link>
+          <Link href="/blogs" onClick={() => setIsResponsive(false)}>Blogs</Link>
           <Link href="/contact" onClick={() => setIsResponsive(false)}>Contact</Link>
           <a className="btn" href="tel:+2120656561701">Appeler Maintenant</a>
         </div>
