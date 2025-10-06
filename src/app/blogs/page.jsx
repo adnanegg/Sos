@@ -6,7 +6,6 @@ export const metadata = {
     "Articles concis sur l'urgence médicale et le transport sanitaire à Rabat-Salé.",
 };
 
-// Example blog data (replace with your CMS / DB later)
 const blogs = [
   {
     slug: "urgence-medicale-sale-reflexes-vitaux",

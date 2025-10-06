@@ -62,7 +62,7 @@ export default function BlogPost() {
         </section>
 
         <section style={{ marginBottom: "3rem" }}>
-          <h2 style={{ fontSize: "1.75rem", fontWeight: "600", color: "#1f2937", marginBottom: "1.5rem", textAlign: "left" }}>2. L'Ambulance Privée (Votre Service : [Nom de votre ambulance])</h2>
+          <h2 style={{ fontSize: "1.75rem", fontWeight: "600", color: "#1f2937", marginBottom: "1.5rem", textAlign: "left" }}>2. L'Ambulance Privée (SOS Ambulance)</h2>
           <p style={{ color: "#374151", marginBottom: "1.5rem", fontSize: "0.95rem", textAlign: "left" }}>
             Le service privé est essentiel pour le confort, la rapidité sur les cas moins critiques et la liberté de choix.
           </p>
@@ -92,7 +92,7 @@ export default function BlogPost() {
               </tr>
               <tr>
                 <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>À Appeler</strong></td>
-                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>[+212 6 56 56 17 01]</strong></td>
+                <td style={{ padding: "0.5rem", border: "1px solid #e5e7eb" }}><strong>+212 6 56 56 17 01</strong></td>
               </tr>
             </tbody>
           </table>
@@ -146,7 +146,7 @@ export default function BlogPost() {
         <section style={{ marginBottom: "3rem" }}>
           <h2 style={{ fontSize: "1.75rem", fontWeight: "600", color: "#1f2937", marginBottom: "1.5rem", textAlign: "left" }}>Votre Choix pour le Confort et la Personnalisation</h2>
           <p style={{ color: "#374151", marginBottom: "1.5rem", fontSize: "0.95rem", textAlign: "left" }}>
-            À Salé, si la situation n'est pas une urgence vitale, choisir notre service privé, <strong>[Nom de votre ambulance]</strong>, c'est choisir :
+            À Salé, si la situation n'est pas une urgence vitale, choisir notre service privé, <strong>SOS Ambulance</strong>, c'est choisir :
           </p>
           <ul style={{ paddingLeft: "1.5rem", color: "#374151", marginBottom: "1.5rem", listStyleType: "disc", textAlign: "left", display: "inline-block" }}>
             <li style={{ marginBottom: "0.25rem" }}>Le Confort : Des véhicules modernes et bien équipés.</li>
@@ -157,7 +157,7 @@ export default function BlogPost() {
             Gardez notre numéro en tête pour vos transports programmés ou vos urgences :
           </p>
           <h3 style={{ fontSize: "1.5rem", fontWeight: "600", color: "#1f2937", marginBottom: "1.5rem", textAlign: "left" }}>
-            [+212 6 56 56 17 01]
+            +212 6 56 56 17 01
           </h3>
         </section>
 
