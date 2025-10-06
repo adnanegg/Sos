@@ -16,7 +16,7 @@ const blogs = [
     image: "Assets/blog/blog1.jpg",
   },
   {
-    slug: "ambulance-privee-vs-publique-sale",
+    slug: "ambulance-prive-vs-ambulance-public",
     title: "Ambulance Privée vs. Ambulance Publique à Salé : Quand Choisir Quoi ?",
     excerpt:
       "Les différences clés pour faire le bon choix selon la situation.",

@@ -13,13 +13,10 @@ export default function BlogPost() {
     <main style={{ minHeight: "150vh", backgroundColor: "#f9fafb", padding: "4rem 0", fontFamily: "Arial, sans-serif" }}>
       <div style={{ maxWidth: "60rem", margin: "0 auto", padding: "0 1rem", textAlign: "center" }}>
         <h1 style={{ fontSize: "3rem", fontWeight: "bold", color: "#1f2937", lineHeight: "1.25", marginBottom: "2rem", textAlign: "left" }}>
-          SOS Ambulance: BLOG 2
-        </h1>
-        <h1 style={{ fontSize: "3rem", fontWeight: "bold", color: "#1f2937", lineHeight: "1.25", marginBottom: "2rem", textAlign: "left" }}>
           Ambulance Privée vs. Ambulance Publique à Salé : Quand Choisir Quoi ?
         </h1>
         <img
-          src="/Assets/blog/blog2.png"
+          src="/Assets/blog/blog2.jpg"
           alt="Ambulance Comparison"
           style={{ maxWidth: "100%", height: "auto", marginBottom: "3rem", objectFit: "cover" }}
         />
